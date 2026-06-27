@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html>
-<body style="margin:0;background:#111">
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RTMKlik Live</title>
 
-<h2 style="color:white;text-align:center">
+<style>
+html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background:#111;
+}
+
+.title{
+    color:white;
+    text-align:center;
+    padding:12px;
+    font-family:sans-serif;
+}
+
+iframe{
+    width:100%;
+    height:calc(100vh - 60px);
+    border:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">
 📺 RTMKlik Live
-</h2>
+</div>
 
 <iframe
 src="https://rtmklik.rtm.gov.my/live/tv/tv"
-width="100%"
-height="720">
+allow="autoplay; fullscreen"
+allowfullscreen
+loading="lazy">
 </iframe>
 
 </body>
